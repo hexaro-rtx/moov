@@ -2,9 +2,18 @@
   "log": {
     "loglevel": "warning"
   },
+  "dns": {
+    "servers": [
+      "8.8.8.8",
+      "1.1.1.1",
+      "localhost"
+    ],
+    "queryStrategy": "UseIPv4"
+  },
   "inbounds": [
     {
       "port": 10000,
+      "listen": "0.0.0.0",
       "protocol": "vmess",
       "settings": {
         "clients": [
@@ -26,7 +35,13 @@
   "outbounds": [
     {
       "protocol": "freedom",
-      "tag": "direct"
+      "tag": "direct",
+      "settings": {
+        "domainStrategy": "UseIPv4"
+      }
     }
-  ]
+  ],
+  "routing": {
+    "domainStrategy": "AsIs"
+  }
 }
