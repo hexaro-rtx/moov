@@ -1,0 +1,17 @@
+# Fichiers sensibles (au cas où tu les créérais plus tard)
+.env
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+
+# Dossier de config local
+.vscode/
+.idea/
+
+# Système
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
