@@ -14,15 +14,15 @@
     {
       "port": 10000,
       "listen": "0.0.0.0",
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "clients": [
           {
             "id": "335e49bf-40cb-4361-924d-683dab5b5782",
-            "alterId": 0,
-            "security": "auto"
+            "level": 0
           }
-        ]
+        ],
+        "decryption": "none"
       },
       "streamSettings": {
         "network": "ws",
