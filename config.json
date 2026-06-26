@@ -1,41 +1,20 @@
 {
-  "log": {
-    "loglevel": "warning"
-  },
-  "dns": {
-    "servers": [
-      "8.8.8.8",
-      "1.1.1.1"
-    ]
-  },
+  "log": {"loglevel": "warning"},
+  "dns": {"servers": ["8.8.8.8", "1.1.1.1"]},
   "inbounds": [
     {
       "port": 10000,
       "listen": "0.0.0.0",
       "protocol": "vless",
       "settings": {
-        "clients": [
-          {
-            "id": "335e49bf-40cb-4361-924d-683dab5b5782",
-            "level": 0
-          }
-        ],
+        "clients": [{"id": "335e49bf-40cb-4361-924d-683dab5b5782", "level": 0}],
         "decryption": "none"
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/graphql"
-        }
+        "network": "h2",
+        "security": "none"
       }
     }
   ],
-  "outbounds": [
-    {
-      "protocol": "freedom",
-      "settings": {
-        "domainStrategy": "UseIPv4"
-      }
-    }
-  ]
+  "outbounds": [{"protocol": "freedom", "settings": {"domainStrategy": "UseIPv4"}}]
 }
