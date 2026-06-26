@@ -14,7 +14,7 @@
         "network": "xhttp",
         "xhttpSettings": {
           "path": "/graphql",
-          "mode": "stream-one"
+          "mode": "auto"
         }
       }
     }
