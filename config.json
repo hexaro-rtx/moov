@@ -23,9 +23,10 @@
         "decryption": "none"
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/graphql"
+        "network": "xhttp",
+        "xhttpSettings": {
+          "path": "/graphql",
+          "mode": "stream-one"
         }
       }
     }
