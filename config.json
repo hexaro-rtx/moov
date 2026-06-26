@@ -10,27 +10,7 @@
   },
   "inbounds": [
     {
-      "port": 8080,
-      "listen": "0.0.0.0",
-      "protocol": "vless",
-      "settings": {
-        "clients": [
-          {
-            "id": "335e49bf-40cb-4361-924d-683dab5b5782",
-            "level": 0
-          }
-        ],
-        "decryption": "none"
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/graphql"
-        }
-      }
-    },
-    {
-      "port": 12345,
+      "port": 10000,
       "listen": "0.0.0.0",
       "protocol": "vless",
       "settings": {
@@ -53,7 +33,6 @@
   "outbounds": [
     {
       "protocol": "freedom",
-      "tag": "direct",
       "settings": {
         "domainStrategy": "UseIPv4"
       }
