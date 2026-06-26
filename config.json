@@ -11,8 +11,11 @@
         "decryption": "none"
       },
       "streamSettings": {
-        "network": "h2",
-        "security": "none"
+        "network": "xhttp",
+        "xhttpSettings": {
+          "path": "/graphql",
+          "mode": "stream-one"
+        }
       }
     }
   ],
